@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tiny Cabinet Creatures</title>
+    <style>
+      html, body { margin: 0; height: 100%; background: #1d1a2b; overflow: hidden; }
+      #game { width: 100%; height: 100%; }
+      /* Lives outside the canvas, so it never shows up in recordings. */
+      #rec {
+        position: fixed; top: 12px; left: 12px; display: none;
+        padding: 6px 12px; border-radius: 999px;
+        background: #e5383b; color: #fff; font: bold 14px system-ui, sans-serif;
+      }
+      #rec.on { display: block; }
+    </style>
+  </head>
+  <body>
+    <div id="game"></div>
+    <div id="rec">REC</div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
